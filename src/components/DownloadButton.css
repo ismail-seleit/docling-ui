@@ -1,0 +1,15 @@
+.download-button {
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  border: none;
+  padding: 15px 30px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: hsl(var(--primary) / 0.9);
+}

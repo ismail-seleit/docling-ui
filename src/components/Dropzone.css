@@ -1,0 +1,48 @@
+.dropzone {
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  background-color: var(--card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 200px;
+  margin-bottom: 40px;
+}
+
+.dropzone.active {
+  border-color: var(--primary);
+}
+
+.dropzone-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropzone p {
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  color: var(--muted-foreground);
+}
+
+.select-files-button {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.select-files-button:hover {
+  background-color: var(--foreground);
+  color: var(--background);
+}

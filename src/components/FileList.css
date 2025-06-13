@@ -1,0 +1,44 @@
+.file-list {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.file-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.file-list li {
+  margin-bottom: 10px;
+  background-color: var(--card);
+  padding: 15px 20px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.status {
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: var(--radius);
+  text-transform: uppercase;
+}
+
+.status.waiting {
+  color: var(--muted-foreground);
+}
+
+.status.processing {
+  color: var(--primary);
+}
+
+.status.complete {
+  color: #00ff00;
+}
+
+.status.error {
+  color: #ff0000;
+}
