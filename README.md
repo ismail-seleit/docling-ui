@@ -31,4 +31,20 @@ Before you begin, ensure you have [Node.js](https://nodejs.org/) and [npm](https
 1.  Clone this repository.
 2.  Run `npm install` in the root directory.
 3.  Run `npm install` in the `backend` directory.
-4.  Double-click on the `run.bat` file to start the application. This will open two terminal windows for the backend and frontend.
+
+### Windows
+
+Double-click on the `run.bat` file to start the application. This will open two terminal windows for the backend and frontend.
+
+### macOS
+
+1.  Open your terminal and navigate to the project's root directory.
+2.  Make the `run.sh` script executable by running the following command:
+    ```
+    chmod +x run.sh
+    ```
+3.  Run the script:
+    ```
+    ./run.sh
+    ```
+    This will open two new terminal windows for the backend and frontend.
