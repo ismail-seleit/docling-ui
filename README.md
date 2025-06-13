@@ -37,7 +37,11 @@ Before you begin, ensure you have [Node.js](https://nodejs.org/) and [npm](https
 Once you've completed the installation steps, you can start the application by running the appropriate script for your operating system:
 
 *   **Windows:** Double-click on the `run.bat` file.
-*   **macOS:** Open your terminal, navigate to the project's root directory, and run the following command:
+*   **macOS:** Open your terminal, navigate to the project's root directory, and first make the script executable by running:
+    ```
+    chmod +x run.sh
+    ```
+    Then, run the script:
     ```
     ./run.sh
     ```
