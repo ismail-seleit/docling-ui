@@ -22,30 +22,13 @@ In a world where everything is in the cloud, there's something to be said for ru
 *   **Offline Access**: You can use Docling UI even when you're not connected to the internet.
 *   **No Subscriptions**: You don't need to pay a monthly fee to use Docling UI. It's completely free and open source.
 
+## Prerequisites
+
+Before you begin, ensure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed on your system.
+
 ## Installation
-
-### Windows
-
-1.  Download the latest `.exe` installer from the [releases page](https://github.com/ismail-seleit/docling-ui/releases).
-2.  Double-click the installer to begin the installation.
-3.  Follow the on-screen instructions to complete the installation.
-
-### macOS
-
-1.  Download the latest `.dmg` file from the [releases page](https://github.com/ismail-seleit/docling-ui/releases).
-2.  Double-click the `.dmg` file to open it.
-3.  Drag the Docling UI icon to your Applications folder.
-
-## Development
-
-To run the application in development mode:
 
 1.  Clone this repository.
 2.  Run `npm install` in the root directory.
 3.  Run `npm install` in the `backend` directory.
-4.  Run `npm run electron:start` in the root directory.
-
-To build the application for Windows and macOS:
-
-1.  Run `npm run electron:package:win` to build for Windows.
-2.  Run `npm run electron:package:mac` to build for macOS.
+4.  Double-click on the `run.bat` file to start the application. This will open two terminal windows for the backend and frontend.
