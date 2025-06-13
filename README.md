@@ -32,19 +32,14 @@ Before you begin, ensure you have [Node.js](https://nodejs.org/) and [npm](https
 2.  Run `npm install` in the root directory.
 3.  Run `npm install` in the `backend` directory.
 
-### Windows
+### Running the Application
 
-Double-click on the `run.bat` file to start the application. This will open two terminal windows for the backend and frontend.
+Once you've completed the installation steps, you can start the application by running the appropriate script for your operating system:
 
-### macOS
-
-1.  Open your terminal and navigate to the project's root directory.
-2.  Make the `run.sh` script executable by running the following command:
-    ```
-    chmod +x run.sh
-    ```
-3.  Run the script:
+*   **Windows:** Double-click on the `run.bat` file.
+*   **macOS:** Open your terminal, navigate to the project's root directory, and run the following command:
     ```
     ./run.sh
     ```
-    This will open two new terminal windows for the backend and frontend.
+
+This will start both the frontend and backend servers, and the application will be accessible at `http://localhost:3000`.
