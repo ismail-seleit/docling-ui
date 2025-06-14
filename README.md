@@ -31,6 +31,7 @@ Before you begin, ensure you have [Node.js](https://nodejs.org/) and [npm](https
 1.  Clone this repository.
 2.  Run `npm install` in the root directory.
 3.  Run `npm install` in the `backend` directory.
+4.  Run `npm install` in the `docling-markdown-weaver` directory.
 
 ### Running the Application
 
@@ -46,4 +47,4 @@ Once you've completed the installation steps, you can start the application by r
     ./run.sh
     ```
 
-This will start both the frontend and backend servers, and the application will be accessible at `http://localhost:3000`.
+This will start the backend server, the new frontend development server, and the Electron application.
