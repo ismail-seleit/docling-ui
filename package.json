@@ -22,6 +22,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "install:all": "npm install && npm install --prefix backend && npm install --prefix docling-markdown-weaver",
     "dev": "concurrently \"npm start --prefix backend\" \"npm run dev --prefix docling-markdown-weaver\" \"wait-on http://localhost:8080 && electron .\"",
     "build": "react-scripts build",
     "test": "react-scripts test",

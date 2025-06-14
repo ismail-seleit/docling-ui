@@ -29,9 +29,7 @@ Before you begin, ensure you have [Node.js](https://nodejs.org/) and [npm](https
 ## Installation
 
 1.  Clone this repository.
-2.  Run `npm install` in the root directory.
-3.  Run `npm install` in the `backend` directory.
-4.  Run `npm install` in the `docling-markdown-weaver` directory.
+2.  Run `npm run install:all` in the root directory. This will install all the necessary dependencies for the main application, the backend, and the frontend.
 
 ### Running the Application
 
