@@ -46,3 +46,17 @@ Once you've completed the installation steps, you can start the application by r
     ```
 
 This will start the backend server, the new frontend development server, and the Electron application.
+
+## Troubleshooting
+
+### SSL Certificate Error on macOS
+
+If you encounter an `[SSL: CERTIFICATE_VERIFY_FAILED]` error on macOS when running the application, it means that Python is unable to verify the security certificate of the server it's trying to download the OCR model from.
+
+To fix this, you need to install the necessary root certificates for Python. Open a terminal on your Mac and run the following command:
+
+```bash
+open "/Applications/Python 3.11/Install Certificates.command"
+```
+
+This will open a new terminal window and run a script that installs the `certifi` package's certificates, which will allow Python to securely connect to servers and download the required files.
