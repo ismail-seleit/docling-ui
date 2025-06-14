@@ -47,6 +47,18 @@ Once you've completed the installation steps, you can start the application by r
 
 This will start the backend server, the new frontend development server, and the Electron application.
 
+## Credits
+
+This project is a user interface for the powerful `docling` command-line tool. All credit for the document conversion technology goes to the original creators of the [docling project](https://github.com/docling-project/docling).
+
+## Disclaimer
+
+This project was "vibe-coded" and may contain unexpected features or bugs. It is provided as-is, without any warranty.
+
+## Note on Errors
+
+If you encounter any errors or issues not covered in the troubleshooting section, it is recommended to consult an LLM for assistance.
+
 ## Troubleshooting
 
 ### SSL Certificate Error on macOS
