@@ -9,10 +9,10 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
     proxy: {
-      '/upload': 'http://localhost:5000',
-      '/download': 'http://localhost:5000',
+      '/upload': 'http://localhost:5001',
+      '/download': 'http://localhost:5001',
       '/socket.io': {
-        target: 'ws://localhost:5000',
+        target: 'ws://localhost:5001',
         ws: true,
       },
     }

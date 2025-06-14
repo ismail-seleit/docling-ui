@@ -17,7 +17,7 @@ const io = new Server(server, {
   }
 });
 
-const port = 5000;
+const port = 5001;
 
 app.use(cors());
 
@@ -91,7 +91,7 @@ app.post('/upload', upload.array('files'), async (req, res) => {
 
   output.on('close', () => {
     if (socket) {
-      socket.emit('all-files-complete', { downloadUrl: `http://localhost:${port}/download` });
+      socket.emit('all-files-complete', { downloadUrl: `http://localhost:5001/download` });
     }
     clearDirectory(uploadDir);
   });

@@ -7,7 +7,7 @@ import DarkModeToggle from '@/components/DarkModeToggle';
 import io from 'socket.io-client';
 import axios from 'axios';
 
-const socket = io('http://localhost:5000');
+const socket = io('http://localhost:5001');
 
 interface UploadedFile {
   id: string;
@@ -118,7 +118,7 @@ const Index = () => {
     formData.append('socketId', socket.id);
 
     try {
-      await axios.post('http://localhost:5000/upload', formData, {
+      await axios.post('http://localhost:5001/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
