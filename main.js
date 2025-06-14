@@ -13,8 +13,8 @@ function createWindow() {
 
   win.loadURL(
     isDev
-      ? 'http://localhost:3000'
-      : `file://${path.join(__dirname, '../build/index.html')}`
+      ? 'http://localhost:8080'
+      : `file://${path.join(__dirname, '../docling-markdown-weaver/dist/index.html')}`
   );
 }
 

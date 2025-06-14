@@ -10,7 +10,6 @@
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.9.0",
-    "concurrently": "^9.1.2",
     "cross-env": "^7.0.3",
     "electron-is-dev": "^3.0.1",
     "react": "^19.1.0",
@@ -23,11 +22,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "dev": "concurrently \"npm start\" \"npm start --prefix backend\"",
+    "dev": "concurrently \"npm start --prefix backend\" \"npm run dev --prefix docling-markdown-weaver\" \"wait-on http://localhost:8080 && electron .\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "electron:start": "concurrently -k \"cross-env BROWSER=none npm start\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron:start": "npm run dev",
     "electron:package:mac": "npm run build && electron-builder -m -c.extraMetadata.main=build/main.js",
     "electron:package:win": "npm run build && electron-builder -w -c.extraMetadata.main=build/main.js"
   },
@@ -50,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^9.1.2",
     "electron": "^36.4.0",
     "electron-builder": "^26.0.12"
   },
